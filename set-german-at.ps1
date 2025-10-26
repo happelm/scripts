@@ -7,9 +7,9 @@ $ErrorActionPreference = 'Stop'
 $capabilities = @(
   "Language.Basic~~~de-DE~0.0.1.0"       # Pflicht für UI
   # Optional:
-  "Language.Handwriting~~~de-DE~0.0.1.0",
-  "Language.Speech~~~de-DE~0.0.1.0",
-  "Language.OCR~~~de-DE~0.0.1.0"
+  # "Language.Handwriting~~~de-DE~0.0.1.0",
+  # "Language.Speech~~~de-DE~0.0.1.0",
+  # "Language.OCR~~~de-DE~0.0.1.0"
 )
 
 foreach ($cap in $capabilities) {
@@ -48,3 +48,4 @@ Set-WinUILanguageOverride -Language "de-DE"
 Write-Host "Neustart in 10 Sekunden, um Sprache/Region vollständig anzuwenden..." -ForegroundColor Yellow
 Start-Sleep -Seconds 10
 shutdown.exe /r /t 5
+
